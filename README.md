@@ -23,4 +23,10 @@ Mastering the "Loop" structure in PHP and running it on a local server.
   I will continue to focus on creating user-friendly code, millimeter by millimeter.
   Feb 14, 2026
   "Good morning! I hope you have a great day today! Today , I will refine my philosophy into a collection of quotes. Code is a reflection of the soul."
+  markdown
+  ## Feb 14,2026: The Lesson of Infinite Loops
+  -**Incident:** Experienced an infinite loop by mixing up variable names `$i` and `$count`.
+  -**Cause:** Logical inconsistency. The loop condition relied on `$count`,but the increment was applied to `$i`.
+  -**Learning:** Variable naming must be consistent and intentional. Even a single character mismatch can freeze a system.
+  -**Integrity:** Facing my mistakes honestly is the only way to reach the top tier.
 

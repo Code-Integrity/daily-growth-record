@@ -65,11 +65,17 @@
 - **Autonomy:** I build my own flight path, independent of the noise of the crowd.
 - **Security:** Protected by 2FA and physical recovery protocols.
 
+## 💡 Technical Insight: `return` vs `echo`
+
+- **Observation:** The school text uses `echo` inside functions, which forces immediate output.
+- **My Stance:** Following the [official PHP documentation](https://www.php.net), I prioritize using `return`.
+- **Reason:** Using `return` ensures the function is a "pure logic provider," allowing the caller to decide how to use the data (**reusability**).
+- **Integrity:** I choose the "standard" over "convenience." I will not settle for "it just works."
+
 ## 🛠 Tech Stack
 - **Language:** PHP 8.x
 - **Platform:** GitHub (Private Vault & Public Beacon)
 - **Method:** Millimeter progress, every single day.
-
 
 
 

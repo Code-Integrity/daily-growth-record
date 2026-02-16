@@ -112,6 +112,17 @@
 - **Resilience:** My past experiences built my immunity to peer pressure.
 - **Perspective:** In the heights of solitude, the truth becomes clearer.
 
+## 🎯 Today's Mission: Adopting Branching Strategy
+- **Status:** **In Progress (via Pull Request)**
+- **Method:** Moved away from direct pushing to `main`.
+- **Action:** Created `feature/sovereign-quotes` to manage soul-searching quotes independently.
+- **Integrity:** Following professional GitHub Flow, even when not required by the curriculum.
+
+> **"Best Practices over Shortcuts"**
+- I am aware that direct pushing to the mainbranch is generally avoided in professional development.
+- While following the school curriculum for progression, I prioritize understanding Branching Strategies and Pull Requests for real-world collaboration.
+- Integrity means doing things right, even when the curriculum suggests otherwise.
+
 
 
 

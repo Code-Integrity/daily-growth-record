@@ -138,4 +138,41 @@
 - **Infrastructural Sovereignty:** Successfully verified the logic on a local development server.
 - **Workflow Excellence:** Executed a flawless GitHub Flow (Branching/PR/Merging) despite it being "optional" in the curriculum.
 - **Motto:** "Actions prove who I am. Logic proves what I know."
-.
+
+- **Practice:** Successfully implemented a tax calculation logic with `strict_types=1`.
+- **Validation:** Verified the output `1100 JPY` via a local PHP development server.
+- **Reflection:** Logic is the only thing that doesn't betray. I trust my code because I built it with integrity.
+
+- **Deep Dive:** Exploring PHP strict typing and return value integrity.
+- **Challenge:** Implemented a tax calculation function with explicit type handling.
+- **Philosophy:** Precision in logic creates reliability in the real world.
+
+> **"Finding Depth in the Basics: Why PHP?"**
+- Many call PHP "simple," but I see its foundational robustness.
+- I refuse the noise of "dead languages" and focus on the evolutionary strength of PHP 8.x.
+- Integrity: Mastering the basics is the only path to building unshakeable systems.
+
+> **"Deep Dive into Git Branching"**
+- Realized that a branch is not a copy of files, but a lightweight pointer to a commit.
+- This efficiency is what allows professional developers to maintain data integrity across parallel features.
+- Chiko-Goitsu: Applied this structural understanding to today's Docker environment setup.
+
+> **"Beyond the Curriculum: Why I chose Branching Strategy"**
+- The standard curriculum labels branching as "not required at this stage."
+- **My Stance:** I disagree. Integrity in development starts with Version Control.
+- I have already integrated GitHub Flow into my daily routine to ensure the safety and clarity of my codebase.
+- **Sovereignty:** I define my own requirements based on professional excellence, not on school limitations.
+
+- **Achievement:** Awarded the **"Pull Shark"** badge by GitHub for adopting professional Pull Request workflows.
+- **Philosophy:** I don't just write code; I follow the global standards of software engineering.
+
+> **"The Importance of Validation"**
+- Integrity means verifying the details before final execution.
+- I prioritize meticulous checking in both code and administration to ensure absolute reliability.
+- Motto: "Trust, but verify."
+
+> **"Defensive Excellence: Trust but Verify"**
+- I acknowledge that human error is inevitable.
+- Therefore, I build rigorous validation layers into my code and my daily processes.
+- Integrity: Excellence is not an accident; it is the result of continuous, meticulous verification.
+

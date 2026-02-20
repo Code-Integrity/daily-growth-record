@@ -24,4 +24,3 @@ echo "--- Integrated Result ---<br>";
 echo "ID: " . $result['id'] . "(" . gettype($result['id']) . ")<br>";
 echo "Email: " . $result['email'] . "<br>";
 echo "Memo: " . $result['memo'] . "<br>";
-?> 

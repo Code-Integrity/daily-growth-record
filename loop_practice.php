@@ -11,4 +11,3 @@ foreach ($days as $day) {
     }
     
 }
-?>

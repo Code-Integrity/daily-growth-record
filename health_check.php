@@ -16,4 +16,3 @@ while ($energy >= 20) {
 
     $hour++;
 }
-?>   

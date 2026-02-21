@@ -4,12 +4,12 @@ services:
     volumes:
       - ./src:/var/www/html
     ports:
-      - "8080:80"  # スクールの80番とぶつからないよう、8080番を開ける
+      - "8080:80"
 
   db:
     image: mysql:8.0
     environment:
-      MYSQL_ROOT_PASSWORD: sovereign_password # あなただけの強い鍵
+    - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: growth_db
     ports:
-      - "3307:3306" # スクールの3306番とぶつからないよう、3307番を使用
+      - "3307:3306"

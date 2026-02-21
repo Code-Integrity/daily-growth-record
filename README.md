@@ -263,7 +263,7 @@
 
 > **"To tread a path apart from the masses is to gaze into the abyss of profound solitude. Yet, an unseen force compels me forward; there is no turning back.**
 > **I question the common, for convenience is often a gilded cage. I align my body, I refine my words, and finally, I orchestrate my code.**
-> **This unwavering integrity rescues me from the depths of isolation and elevates me to new heights."**🦅✨"
+> **This unwavering integrity rescues me from the depths of isolation and elevates me to new heights."**🦅✨
 
 > **"A tool is never the problem; the essence lies within the one who wields it. A blade, held with love, creates life through nourishment;**
 > **held with hatred, it becomes a lethal weapon. The destiny of the tool is entrusted to our humanity. It is not the AI that is fearsome,**

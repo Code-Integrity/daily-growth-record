@@ -1,10 +1,13 @@
 services:
   app:
-    image: php:8.4-apache
+    build: .
     volumes:
       - ./src:/var/www/html
     ports:
       - "8080:80"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+
 
   db:
     image: mysql:8.0

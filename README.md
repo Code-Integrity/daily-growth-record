@@ -314,3 +314,16 @@
 > **one must harmonize the internal organs. The key is Shin-do-fu-ji(Indivisibility of Body and Earth).**  
 > **The ultimate answer resides in the traditional wisdom passed down through generations—the nourishment that sustained our ancestors. 🦅✨"**
 
+## 📂 The Fortress Architecture: Directory Structure
+
+```text
+daily-growth-record/
+├── .env # 🔐 The Key (Secrets & Credentials)
+├── .gitignore # 🛡️ The Shield (Excluding sensitive data)
+├── docker-compose.yml # ⚖️ The Law (Orchestrating containers)
+├── Dockerfile # 🧬 The Genesis (Empowering PHP with PDO)
+├── README.md # 🦅 The Soul (Manifesto & Growth Logs)
+└── src/ # ⛪ The Sanctuary (PHP Logic & Source)
+├── database.php # ⚡ The Nerve (Secure PDO Connection)
+└── index.php # 📢 The Voice (Interface & Output)
+

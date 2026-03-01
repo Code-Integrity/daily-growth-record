@@ -1,1 +1,8 @@
 .env
+/src/vendor
+/src/node_modules
+/src/.env
+/docker/mysql/data/*
+!/docker/mysql/data/.gitkeep
+.DS_Store
+Thumbs.db

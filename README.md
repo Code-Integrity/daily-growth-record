@@ -426,3 +426,16 @@ daily-growth-record/
 > **"Not all, but some coding boot camps do not aim to cultivate true engineers. Their real goal is to manufacture**
 > **'programming machines'—thoughtless laborers who follow instructions without question, easily exploited for low wages.**
 > **They dangle the 'carrot' of career success to lure people into a system of intellectual conformity."**
+
+# "Mar 4,2026
+
+## 🛡️Current Project: Ubasute-Checker
+An automated security diagnostic tool designed to detect potential vulnerabilities within legacy Docker environments and educational templates.
+## 💡 Motivation
+In many entry-level engineering programs, security is often sidelined in favor of "getting it to work." This project was born from a critical observation of widespread insecure practices—such as unnecessary root privileges, deprecated command executions (e.g., raw curl | sh), and improper permission settings (e.g., chmod 777).
+As an engineer committed to the Zero Trust philosophy, I am building this "shield" to visualize these hidden risks and advocate for secure-by-default development from day one.
+## 🚀 Technical Stack
+Language: PHP 8.4 (Latest)
+Framework: Laravel 12
+Environment: Docker / Laravel Sail
+Methodology: AI-Driven Development & Security Auditing

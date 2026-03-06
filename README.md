@@ -454,3 +454,35 @@ Successfully architected and deployed a highly secure contact form using **Larav
 #### Comparison vs. Legacy Methods:
 By rewriting the "School-provided template" (PHP 8.1 legacy code), I successfully reduced code complexity while significantly increasing the security threshold.
 
+# "Mar,6 2026
+
+## 🛠️ Development Environment & Tech Stack
+
+The "Sovereign-Main" branch is built upon a bleeding-edge environment to ensure maximum security and performance.
+
+- **OS:** Ubuntu (WSL2) on Windows
+- **PHP:** 8.4 (Latest Stable)
+- **Framework:** Laravel 12 (Sovereign Edition)
+- **Containerization:** Docker / Laravel Sail
+- **AI Engine:** Ollama (Llama 3.2:latest) - Fully Offline Analysis
+- **Database:** PostgreSQL (Internal)
+- **Version Control:** Git with SSH Key-based Identity Isolation
+
+---
+
+## 🕵️ AI Inspector (Ollama) Deployment Record (2025/03/06)
+
+Successfully integrated the **"AI Deep Analysis Engine"** using local LLM into the project.
+The "Intelligent Shield" is now capable of exposing vulnerabilities hidden in the context that standard keyword scanning might miss.
+
+### 🚧 Breaking Through the "Four Walls" of Errors
+
+The following technical barriers were dismantled through relentless debugging:
+
+1. **The Wall of Authentication (SSH & Account Separation)**
+- Faced multiple `Permission denied` and `Integrity Errors` due to conflicts between school (throwaway) and main repository keys.
+- Achieved complete **Isolation** by separating SSH keys (`ssh-keygen`) and managing profiles via `~/.ssh/config`.
+
+2. **The Wall of Communication (WSL2 & Docker Bridge)**
+- Struggled with `Connection Refused` as the Docker container (Sail) failed to reach Ollama on the Ubuntu host.
+- Identified the WSL2 physical IP (172.xx.xx.xx) instead of relying solely on `host.docker.internal`. Enforced the connection via `OLLAMA_HOST=0.0.0.0`.

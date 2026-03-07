@@ -486,3 +486,37 @@ The following technical barriers were dismantled through relentless debugging:
 2. **The Wall of Communication (WSL2 & Docker Bridge)**
 - Struggled with `Connection Refused` as the Docker container (Sail) failed to reach Ollama on the Ubuntu host.
 - Identified the WSL2 physical IP (172.xx.xx.xx) instead of relying solely on `host.docker.internal`. Enforced the connection via `OLLAMA_HOST=0.0.0.0`.
+
+# "Mar,7 2026
+## 🛡️Security Audit & Aegis-Zero
+
+**Security Implementation Report: Aegis-Zero Project (Updated)**
+
+**Overview**  
+This project maintains a strict Zero-Trust security policy. During the development process, I identified significant security vulnerabilities in the standard boilerplates provided by the educational institution (e.g., Backdoor risks in PHP 8.1, unpatched aptvulnerabilities, and root-privilege execution).
+To mitigate these risks and protect my local environment and GitHub identity, I developed a custom AI-driven security auditor named "Aegis-Zero."
+
+**Key Security Actions Taken**  
+Environment Isolation (De-contamination)
+Abandoned insecure school templates to prevent local machine infection.
+Migrated to a hardened PHP 8.4 / Laravel 12 stack.
+Restricted all container ports to 127.0.0.1 to prevent external intrusion via LAN.
+Switched Docker execution from root to a non-privileged developeruser.
+
+**Aegis-Zero: AI-Powered Static Analysis**  
+Built a dedicated security scanner using Python and Ollama (Llama 3.2).
+
+**Custom Audit Constitution:**  Implemented rules/php_rules.txtto define strict auditing standards. This allows the AI to distinguish between legacy school requirements (Laravel 8) and modern professional standards (Laravel 12), significantly reducing false positives.
+
+**Automated Vulnerability Detection:**  Successfully identified critical risks such as eval()functions and un-sanitized environment variables in external templates.
+Established a "Clean Room" development workflow using Python virtual environments (venv).
+
+**Risk Management**
+Utilized "Disposable Accounts" for insecure school requirements to protect the integrity of my primary GitHub profile.
+Implemented a strictly defined .gitignore policy to prevent accidental leakage of sensitive environment variables and audit logs.
+
+**Core Belief**
+> **"Never trust, always verify."**
+> Technology should solve social problems, but it must be built upon a foundation of absolute security and integrity.
+
+

@@ -1,56 +1,41 @@
+# --- セキュリティ・認証系 (最優先) ---
+src/.env
+src/.env.backup
+src/.env.production
+src/auth.json
+*.key
+*.pem
+*.json
+
+# --- Fortify / AI監査官 (スキャンツール関連) ---
+fortify/
+target/
+reports/
+*.fpr
 *.log
-.DS_Store
-.env
-.env.backup
-.env.production
-.phpactor.json
-.phpunit.result.cache
-/.fleet
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
-/auth.json
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/storage/pail
-/vendor
-Homestead.json
-Homestead.yaml
-Thumbs.db
-/src/vendor
-/src/node_modules
-/src/.env
+
+# --- Laravel / PHP 固有 (src内をガード) ---
+src/vendor/
+src/node_modules/
+src/storage/*.log
+src/storage/framework/
+src/bootstrap/cache/
+src/public/build/
+src/public/storage
+src/.phpunit.result.cache
+
+# --- Docker / DB の実体隔離 ---
 /docker/mysql/data/*
 !/docker/mysql/data/.gitkeep
-.DS_Store
-Thumbs.db
-# --- セキュリティ・認証系 (最優先) ---
-.env # データベースのパスワードやAPIキーの塊
-*.key # SSL秘密鍵など
-*.pem # 認証用証明書
-*.json # Google Cloud等のサービスアカウントキー（Fortify連携用など）
-
-# --- Fortify / スキャンツール関連 ---
-fortify/ # Fortifyの実行バイナリやエンジン本体（あれば）
-/target/ # スキャン対象のビルド生成物
-/reports/ # 解析結果レポート（脆弱性情報が丸見えになるため）
-*.fpr # Fortify Project Report (解析データ)
-*.log # 実行ログ（パスやユーザー名が含まれる）
-
-# --- Laravel / PHP 固有 ---
-/vendor/ # ライブラリ本体（composer.jsonがあれば再現可能）
-/node_modules/ # フロントエンドライブラリ
-/storage/*.log # アプリのエラーログ
-/storage/framework/ # キャッシュやセッション
-/bootstrap/cache/ # フレームワークのキャッシュ
 
 # --- OS / エディタ関連 (本丸の情報を漏らさない) ---
-.vscode/ # あなたのVS Code設定（絶対パスが含まれる）
-.idea/ # JetBrains系エディタの設定
-.DS_Store # Mac固有の一時ファイル
-Thumbs.db # Windows固有のキャッシュ
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.fleet/
+.nova/
+.zed/
+.phpactor.json
+Homestead.json
+Homestead.yaml

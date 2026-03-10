@@ -544,3 +544,27 @@ Today, I faced a choice: succumb to the "just follow the textbook" mentality enf
 To a "textbook-only" instructor, my insistence on Laravel Sail and modern security might seem like unnecessary rebellion. However, as an engineer whose mission is to solve social issues through technology, security is not an option—it is the foundation.
 Compliance with outdated teaching is a technical debt I refuse to carry. By isolating the "toxic" environment, I have transformed a forced academic requirement into a professional exercise in Risk Management and Infrastructure Hardening.
 "Never trust, always verify. Even when instructed otherwise."
+
+# "Mar,10 2026
+
+## 🛡️ Self-Hosted Security Gatekeeper: Aegis-Zero
+
+To uphold my commitment to **Zero-Trust**, I have implemented a specialized Git Hook that integrates this AI Auditor directly into my development workflow.
+
+### Key Feature: Automated Pre-Push Security Audit
+This project now includes a custom `pre-push` hook that automatically triggers the **Aegis-Zero** engine (powered by Llama 3.2) before any code leaves the local environment.
+
+- **Automated Inspection**: Every `git push` command initiates a deep scan of staged changes.
+- **Leak Prevention**: Specifically designed to detect and block accidental uploads of sensitive data (API keys, `.env` files) and insecure configurations (e.g., legacy PHP backdoors or unpatched Docker layers).
+- **Hardened Workflow**: If the AI Auditor identifies a "Critical Vulnerability" or "Instant Fail" pattern, the push is physically aborted, ensuring that no compromised code ever reaches the remote repository.
+
+> *"Never trust, always verify. Security is not a feature; it is the foundation."*
+
+セルフホスト型セキュリティ・ゲートキーパー: Aegis-Zero
+「ゼロトラスト」の信念を貫くため、このプロジェクトには開発ワークフローに直接AI監査官を組み込む専用のGit Hookを実装しました。
+主要機能: 自動プリプッシュ・セキュリティ監査
+本プロジェクトには、コードがローカル環境を離れる前に Aegis-Zero（Llama 3.2搭載）を自動起動するカスタム pre-push フックが搭載されています。
+自動インスペクション: すべての git push コマンドに対し、ステージングされた変更内容をディープスキャンします。
+漏洩防止: 機密情報（APIキー、.envファイル）や、不安全な構成（レガシーなPHPバックドア、未パッチのDockerレイヤー等）の偶発的なアップロードを特定し、ブロックします。
+強化されたワークフロー: AI監査官が「深刻な脆弱性」や「一発アウト（Instant Fail）」のパターンを検知した場合、プッシュを物理的に強制中断し、汚染されたコードがリモートリポジトリに到達するのを未然に防ぎます。
+「決して信じず、常に検証せよ。セキュリティは機能ではなく、基盤である。」

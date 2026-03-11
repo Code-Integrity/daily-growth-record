@@ -1,41 +1,47 @@
-# --- セキュリティ・認証系 (最優先) ---
-src/.env
-src/.env.backup
-src/.env.production
-src/auth.json
-*.key
-*.pem
-*.json
+Today
 
-# --- Fortify / AI監査官 (スキャンツール関連) ---
-fortify/
-target/
-reports/
-*.fpr
-*.log
+# ==========================================
+# 1. すべてを拒否 (Deny All)
+# ==========================================
+/*
 
-# --- Laravel / PHP 固有 (src内をガード) ---
-src/vendor/
-src/node_modules/
-src/storage/*.log
-src/storage/framework/
-src/bootstrap/cache/
-src/public/build/
-src/public/storage
-src/.phpunit.result.cache
+# ==========================================
+# 2. 公開して良いディレクトリの許可
+# ==========================================
+!/src/
+!/public/
+!/resources/
+!/database/
+!/config/
+!/routes/
+!/tests/
 
-# --- Docker / DB の実体隔離 ---
-/docker/mysql/data/*
-!/docker/mysql/data/.gitkeep
+# ==========================================
+# 3. 公開して良いファイルの許可
+# ==========================================
+!/README.md
+!/.gitignore
+!/composer.json
+!/composer.lock
+!/package.json
+!/package-lock.json
+!/artisan
+!/phpunit.xml
+!/vite.config.js
 
-# --- OS / エディタ関連 (本丸の情報を漏らさない) ---
+# ==========================================
+# 4. 絶対に拒否する例外 (Blacklist)
+# ==========================================
+# ホワイトリスト形式でも、これらは「明示的」に拒否し続けます
+.env
+.env.*
+/vendor/
+/node_modules/
+/storage/*.key
+/storage/logs/
+/storage/framework/sessions/
+/public/hot
+/public/storage
+.phpunit.result.cache
 .DS_Store
-Thumbs.db
-.vscode/
-.idea/
-.fleet/
-.nova/
-.zed/
-.phpactor.json
-Homestead.json
-Homestead.yaml
+Now

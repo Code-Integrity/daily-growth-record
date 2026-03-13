@@ -591,4 +591,50 @@ Enhanced AI Auditor: Implemented strict rules to detect and block the exposure o
 E2EE Communication: Integrated Signal for all data transfers between mobile and desktop to eliminate risks of interception.
 Repository Hardening: Adopted an Allow-only (Whitelist) .gitignore policy, making accidental data leaks physically impossible.
 
+# "Mar,13 2026
+## 🛡️ Security Update: 3-Tier Network Isolation
+
+Hardened the project infrastructure using a 3-Tier Network Isolation strategy based on Zero-Trust principles.
+I have abolished the "Single Default Network" structure and implemented three strictly separated segments:
+
+1. frontend: Connects external browsers to the Nginx reverse proxy.  
+
+2. app-facing: Dedicated bridge between Nginx and the App (Laravel).  
+
+3. db-facing: Private tunnel between the App and the DB (MySQL).  
+
+With this architecture, even if the Nginx container is compromised, the attacker is physically barred from discovering or accessing the DB container.
+"The important thing is not what you want to hide, but what you want to show." —— By defining only essential communication paths and silencing everything else, I ensure the ultimate integrity of the system.
+
+本プロジェクトのネットワーク構成を、ゼロトラストの原則に基づき「三層隔離（3-Tier Isolation）」へと強化しました。
+従来の「単一ネットワーク」による全コンテナの相互接続を廃止し、以下の3つの独立したネットワークを構築しています：
+
+1. frontend: 外部ブラウザとNginx（リバースプロキシ）を接続。  
+
+2. app-facing: NginxとApp（Laravel）を接続。  
+
+3. db-facing: AppとDB（MySQL）を接続。
+
+この設計により、万が一Nginxが侵害されても、攻撃者はDBコンテナの存在すら検知・特定することが物理的に不可能です。
+「大切なことは何を隠したいのかではなく、何を見せたいのかだ」 —— 必要な通信路のみを「許可」し、それ以外を「沈黙」させることで、情報の完全性を担保します。
+
+## 🔍 Aegis-Zero: Isolated Auditing via Read-Only Mounts  
+
+The project source code undergoes rigorous static and dynamic analysis by "Aegis-Zero," a custom AI-driven security auditor, as part of the development workflow.
+The core of this process is the ReadOnly (RO) Mounting strategy:
+
+・Physical Separation: By mounting the project directory as Read-Only during the audit, I ensure that the auditing process cannot modify a single bit of the production source code.　　
+
+・Integrity Assurance: This prevents any potential "reverse-attack" from the codebase (e.g., symlink attacks) against the auditor itself.
+
+"Separating observation from manipulation." This is my golden rule for Zero-Trust auditing.
+
+本プロジェクトのソースコードは、開発ワークフローの一環として、外部のAI監査官「Aegis-Zero」による静的・動的解析を受けています。
+特筆すべきは、この監査が「ReadOnly（読み取り専用）マウント」された隔離環境で実行されている点です。
+物理的遮断: 監査対象のディレクトリをReadOnlyでマウントし、監査プロセスが本番のソースコードを1ビットも書き換えられない仕組みを構築。
+整合性の担保: 監査官自身がプロジェクトから攻撃を受けるリスク（シンボリックリンク攻撃等）を物理的に排除しています。
+「見ること」と「触ること」を分離する。これが私のゼロトラストにおける、監査の鉄則です。
+
+
+
 

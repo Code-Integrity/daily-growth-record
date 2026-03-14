@@ -635,6 +635,30 @@ The core of this process is the ReadOnly (RO) Mounting strategy:
 整合性の担保: 監査官自身がプロジェクトから攻撃を受けるリスク（シンボリックリンク攻撃等）を物理的に排除しています。
 「見ること」と「触ること」を分離する。これが私のゼロトラストにおける、監査の鉄則です。
 
+# "Mar,14 2026
+
+## 🛡️Immutable Infrastructure & Design Philosophy
+
+This project assumes that the greatest vulnerability in any system is the "human factor." We build under the premise that "humans are inherently imperfect."
+Immutable Environment: The Nginx container runs with read_only: true. File system tampering is physically blocked at the OS level.
+Volatile Storage: Essential write operations are restricted to tmpfs (RAM). Any potential contamination is wiped clean upon container restart.
+
+> **"Some say those who are deceived are to blame, but humans are beings destined to be deceived. Why? Because humans are not perfect. We must design**  
+> **with the premise that perfection is impossible."**
+
+By acknowledging human fallibility, I have engineered a structure where safety is guaranteed by the architecture itself, rather than relying on perfect human behavior.
+
+不変の実行環境（Immutable Infrastructure）
+
+本プロジェクトでは、システムが侵害される最大の要因は「人的要因」にあると考え、「人間は完璧ではないこと」を前提とした設計を行っています。
+
+Immutable Environment: Nginxコンテナを read_only: true で起動。OSレベルで書き込みを禁止し、ファイル改ざんを物理的に不可能にしています。
+Volatile Storage: 実行に必要な一時領域のみ tmpfs（メモリ上）に展開。コンテナの再起動により、万が一の汚染も跡形もなく消滅します。
+
+>「騙される人間が悪いと言う人がいるが、そもそも人間とは騙される生き物なのだ。なぜなら、人間は完璧ではないから。人間は完璧ではないことを前提に設計することが必要だ。」
+
+この信念に基づき、ユーザーや管理者の「うっかり」や「誤操作」が致命的なセキュリティホールにならないよう、システム構造そのもので安全を担保しています。
+
 
 
 

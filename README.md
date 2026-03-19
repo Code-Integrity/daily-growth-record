@@ -672,3 +672,20 @@ By explicitly registering the user in /etc/passwd and stripping system-wide priv
 
 **Hardened Entrypoint:**
 /etc/passwd への明示的なユーザー登録を行い、システム全体の特権を剥奪。万が一アプリケーションが侵害されても、攻撃者がOSの設定を書き換えたり、他のコンテナへ影響を及ぼしたりする「特権昇格」のルートを物理的に遮断しています。
+
+# "Mar,19 2026
+
+### Supply Chain Security:
+**Integrated composer audit into the development workflow to continuously monitor known vulnerabilities in dependencies.**
+
+### AI-Driven Code Audit (Aegis-Zero):
+**Utilizes a custom Llama 3.2-powered engine to statically detect and block malicious patterns,**  
+**such as eval() functions or backdoors hidden in third-party templates.**
+
+**Supply Chain Security:**  
+
+composer audit を開発フローに統合し、依存パッケージの既知の脆弱性を常時監視。  
+
+**AI-Driven Code Audit (Aegis-Zero):**  
+
+ Llama 3.2 を搭載した自作監査エンジンにより、eval() 等の危険な関数や、サードパーティ製テンプレートに潜むバックドアを静的に検知・遮断しています。

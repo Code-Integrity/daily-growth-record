@@ -44,4 +44,7 @@ Today
 /public/storage
 .phpunit.result.cache
 .DS_Store
+auth.json
+*.sqlite
+*.sql
 Now
